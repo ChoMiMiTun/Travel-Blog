@@ -2,7 +2,6 @@
 
 This is a blog project using laravel framework. This will include following
 
-
 Web
 -----
 
