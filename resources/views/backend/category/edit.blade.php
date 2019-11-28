@@ -8,14 +8,14 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card">
-            @include('alerts')
+                @include('alerts')
                 <div class="card-header bg-primary">
-                <h5>Edit Category</h5>
+                    <h5>Edit Category</h5>
                 </div>
-               
+
                 <div class="card-body">
                     <form method="post" action="{{ url("admin/category/$cat->id/edit") }}">
-                    @csrf
+                        @csrf
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control" name="title" value="{{ $cat->title }}">
@@ -25,8 +25,8 @@
                     </form>
                 </div>
             </div>
-        </div>    
-    </div>   
+        </div>
+    </div>
 </div>
 
 @endsection

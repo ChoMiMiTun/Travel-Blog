@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-      <div class="row">
+    <div class="row">
         <div class="col-md-12">
             <a href="{{ url('admin/post/create') }}" class="btn btn-primary mb-3 float-right">
                 <i class="fas fa-plus-circle mr-1"></i>
@@ -17,21 +17,21 @@
     <div class="row justify-content-center">
         <div class="col-12">
 
-           @include('alerts')
+            @include('alerts')
 
             <table class="table">
                 <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Category</th>
-                    <th>Images</th>
-                    <th>Title</th>
-                    <th>Created at</th>
-                    <th>Actions</th>
-                </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Category</th>
+                        <th>Images</th>
+                        <th>Title</th>
+                        <th>Created at</th>
+                        <th>Actions</th>
+                    </tr>
                 </thead>
                 <tbody>
-                @foreach($posts as $post)
+                    @foreach($posts as $post)
                     <tr>
                         <td>{{ $post->id }}</td>
                         <td>{{ $post->category->title }}</td>
@@ -47,7 +47,7 @@
                             </a>
                         </td>
                     </tr>
-                @endforeach
+                    @endforeach
                 </tbody>
             </table>
         </div>

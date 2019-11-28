@@ -24,7 +24,6 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
-
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
@@ -32,16 +31,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::group(['namespace' => 'Api', 'middleware' => 'auth:api'], function(){
+Route::group(['namespace' => 'Api', 'middleware' => 'auth:api'], function () {
 
-// Route::get('post', 'PostController@index');
-// Route::post('post', 'PostController@store');
-// Route::get('post/{id}', 'PostController@show');
-// Route::put('post/{id}', 'PostController@update');
+    // Route::get('post', 'PostController@index');
+    // Route::post('post', 'PostController@store');
+    // Route::get('post/{id}', 'PostController@show');
+    // Route::put('post/{id}', 'PostController@update');
 
-// Route::delete('post/{id}', 'PostController@destroy');
+    // Route::delete('post/{id}', 'PostController@destroy');
 
-Route::apiResource('post', 'PostController');
-    
+    Route::apiResource('post', 'PostController');
 });
-    

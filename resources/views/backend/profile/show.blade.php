@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-   
+
     <div class="row">
         <div class="col-md-8">
             @include('alerts')
@@ -17,27 +17,25 @@
                     <div class="row">
                         <div class="col-md-4">
                             @if (Auth::user()->image)
-                            <img src="{{ url("images/profile/" . Auth::user()->image ) }}"
-                            class="elevation-2" style="width: 100px">
+                            <img src="{{ url("images/profile/" . Auth::user()->image ) }}" class="elevation-2" style="width: 100px">
                             @else
-                            <img src="{{ url('dist/img/default-user.jpg') }}"
-                            class="elevation-2">
+                            <img src="{{ url('dist/img/default-user.jpg') }}" class="elevation-2">
                             @endif
 
                         </div>
                         <div class="col-md-8">
-                        <table class="table no-border">
-                            <tr>
-                                <td>Name</td>
-                                <td>:</td>
-                                <td>{{ Auth::user()->name }}</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>:</td>
-                                <td>{{ Auth::user()->email }}</td>
-                            </tr>
-                        </table>
+                            <table class="table no-border">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>:</td>
+                                    <td>{{ Auth::user()->name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td>{{ Auth::user()->email }}</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -50,8 +48,8 @@
                 </div> -->
 
             </div>
-            
-            
+
+
 
 
         </div>

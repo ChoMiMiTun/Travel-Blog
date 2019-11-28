@@ -8,14 +8,14 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card">
-            @include('alerts')
+                @include('alerts')
                 <div class="card-header bg-primary">
-                <h4>Create New User</h4>
+                    <h4>Create New User</h4>
                 </div>
-               
+
                 <div class="card-body">
                     <form method="post" action="{{ url('admin/user') }}" enctype="multipart/form-data">
-                    @csrf
+                        @csrf
                         <div class="form-group">
                             <label>Name</label>
                             <input type="name" class="form-control" name="name">
@@ -37,8 +37,8 @@
                     </form>
                 </div>
             </div>
-        </div>    
-    </div>   
+        </div>
+    </div>
 </div>
 
 @endsection

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,115 +24,120 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-<style>
-
-h1, h4, h5{
+    <style>
+        h1,
+        h4,
+        h5 {
             font-family: 'Roboto Slab', serif;
         }
 
-.bg-white{
-    padding: 25px 0;
-}
+        .bg-white {
+            padding: 25px 0;
+        }
 
-.home-title{
-    text-align:center;
-    margin-bottom:30px;
-}
+        .home-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-.navbar-nav .nav-item {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 600;
-    font-size: 16px;
-}
+        .navbar-nav .nav-item {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 600;
+            font-size: 16px;
+        }
 
-.navbar-light .navbar-nav .active>.nav-link{
-    color: #3490dc;
-}
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: #3490dc;
+        }
 
-.mr-auto .nav-item{
-    padding: 0 10px;
-    
-}
+        .mr-auto .nav-item {
+            padding: 0 10px;
 
-#footer{
-    color: #fff;
-}
+        }
 
-.footer-section{
-    padding: 60px 0;
-}
+        #footer {
+            color: #fff;
+        }
 
-.footer-bg{
-    /* background: url('images/footer-bg.jpg')no-repeat center; */
-    
-    background: url( {{ asset('images/footer-bg.jpg') }} );
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        .footer-section {
+            padding: 60px 0;
+        }
 
-.footer-widget{
-    margin-bottom: 20px;
-}
+        .footer-bg {
+            /* background: url('images/footer-bg.jpg')no-repeat center; */
 
-.social-links a{
-    width: 100px;
-    height: 100px;
-    background: #3490dc;
-    padding: 4px 8px;
-    border-radius: 30px;
-    color: #fff;
-}
+            background: url({{ asset('images/footer-bg.jpg')
+        }
+        }
 
-.social-links a:hover{
-    background: #005ba7;
-}
+        );
+        background-repeat: no-repeat;
+        background-position: center;
+        }
 
-.py-4{
-    padding: 40px 0!important;
-}
+        .footer-widget {
+            margin-bottom: 20px;
+        }
 
-.copyright{
-    margin-top: 40px;
-}
+        .social-links a {
+            width: 100px;
+            height: 100px;
+            background: #3490dc;
+            padding: 4px 8px;
+            border-radius: 30px;
+            color: #fff;
+        }
 
-.social h4{
-    margin-bottom: 20px;
-}
+        .social-links a:hover {
+            background: #005ba7;
+        }
 
-.footer-content h4{
-    margin-bottom: 20px;
-}
+        .py-4 {
+            padding: 40px 0 !important;
+        }
 
-</style>
+        .copyright {
+            margin-top: 40px;
+        }
+
+        .social h4 {
+            margin-bottom: 20px;
+        }
+
+        .footer-content h4 {
+            margin-bottom: 20px;
+        }
+    </style>
 
 </head>
 
 
 <body class="homepage">
     <div id="app">
-        
-    @include('frontend.layouts.nav')
 
-<!------------- Slider ------------>
+        @include('frontend.layouts.nav')
 
-@include('frontend.layouts.slider')
+        <!------------- Slider ------------>
 
-<!-------- End Slider ------------->
+        @include('frontend.layouts.slider')
+
+        <!-------- End Slider ------------->
 
 
         <main class="py-4">
             <div class="container">
-            @yield('content')
+                @yield('content')
             </div>
         </main>
     </div>
 
 
     <div id="footer">
-    @include('frontend.layouts.footer')
+        @include('frontend.layouts.footer')
     </div>
 
 
 
 </body>
+
 </html>

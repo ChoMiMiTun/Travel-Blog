@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-   
+
     <div class="row">
         <div class="col-md-8">
             @include('alerts')
@@ -16,33 +16,30 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4">
-                            
+
                             <!-- <img src="{{ url("images/profile/" . $user->image ) }}"
                             class="img-fluid" style="width: 100px"> -->
 
                             @if ($user->image)
-                            <img src="{{ asset('images/profile/' . $user->image ) }}" class="elevation-2"
-                            alt="User Image">
+                            <img src="{{ asset('images/profile/' . $user->image ) }}" class="elevation-2" alt="User Image">
                             @else
-                            <img src="{{ asset('dist/img/default-user.jpg') }}" class="elevation-2"
-                            alt="User Image">
+                            <img src="{{ asset('dist/img/default-user.jpg') }}" class="elevation-2" alt="User Image">
                             @endif
-
 
                         </div>
                         <div class="col-md-8">
-                        <table class="table no-border">
-                            <tr>
-                                <td>Name</td>
-                                <td>:</td>
-                                <td>{{ $user->name }}</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>:</td>
-                                <td>{{ $user->email }}</td>
-                            </tr>
-                        </table>
+                            <table class="table no-border">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>:</td>
+                                    <td>{{ $user->name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td>{{ $user->email }}</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -55,8 +52,8 @@
                 </div> -->
 
             </div>
-            
-            
+
+
 
 
         </div>
