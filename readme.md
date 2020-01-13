@@ -15,7 +15,6 @@ Middleware, Validation Request
 RESTful API
 -----------
 
-crud
 - API Resource
 - Authentication with JSON Web Token(JWT)
 
