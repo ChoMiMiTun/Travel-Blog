@@ -16,14 +16,14 @@ RESTful API
 -----------
 
 crud
--API Resource
--Authentication with JSON Web Token(JWT)
+- API Resource
+- Authentication with JSON Web Token(JWT)
 
 
 ### Uses
 
--Laravel version 5.8
--AdminLTE template
+- Laravel version 5.8
+- AdminLTE template
 
 ### Installation
 
