@@ -33,3 +33,8 @@ AdminLTE template
 - config database
 - php artisan migrate
 - done
+
+##
+
+![screenshort](https://user-images.githubusercontent.com/54518985/72232611-99624980-35f0-11ea-84f5-8155f74adea4.jpg)
+
